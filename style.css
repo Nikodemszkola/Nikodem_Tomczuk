@@ -1,0 +1,951 @@
+body{
+    margin: 0;
+}
+.body1{
+    margin: 0;
+    background-color:#D6B65D;
+}
+
+.div_glowny{
+    padding-left: 240px;
+    width: auto;
+
+}
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #5B3F8D;
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidenav a {
+    padding: 6px 8px 8px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidenav a:hover {
+    color: #F6D55C;
+    font-size: 25px;
+}
+
+.logo{
+    text-align: center;
+    width: 520px;
+    background-color: #F4F4F4;
+    border-radius: 15px;
+    animation-name: animacja1;
+    animation-duration: 3s;
+    padding: 10px;
+    margin-left: 30%;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: static;
+        padding: 0;
+        text-align: center;
+        background-color: #5B3F8D;
+    }
+
+    .sidenav a {
+        padding: 10px;
+        font-size: 18px;
+        display: block;
+        color: #818181;
+    }
+
+    .sidenav a:hover {
+        font-size: 20px;
+        color: #F6D55C;
+    }
+
+    .div_glowny {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .logo {
+        width: 70%;
+        margin: 20px auto; 
+        padding: 10px;
+        background-color: #F4F4F4;
+        border-radius: 15px;
+    }
+
+    .wszystko {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cud1, .cud2, .cud3, .cud4, .cud5, .cud6, .cud7 {
+        width: 90%;
+        margin: 10px 0;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .cud1 img, .cud2 img, .cud3 img, .cud4 img, .cud5 img, .cud6 img, .cud7 img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .cud1 a, .cud2 a, .cud3 a, .cud4 a, .cud5 a, .cud6 a, .cud7 a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #FFFFFF;
+        display: block;
+        padding: 10px;
+        background-color: #5B3F8D;
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sidenav {
+        width: 80px;
+        height: 100%;
+        position: fixed;
+        background-color: #5B3F8D;
+        padding-top: 20px;
+    }
+
+    .sidenav a {
+        padding: 8px 10px;
+        font-size: 20px;
+        color: #818181;
+    }
+
+    .sidenav a:hover {
+        font-size: 22px;
+        color: #F6D55C;
+    }
+
+    .div_glowny {
+        padding-left: 210px; 
+        text-align: center;
+    }
+
+    .logo {
+        width: 80px; 
+        margin: 20px auto;
+        padding: 15px;
+        background-color: #F4F4F4;
+        border-radius: 15px;
+    }
+
+    .wszystko {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    .cud1, .cud2, .cud3, .cud4, .cud5, .cud6, .cud7 {
+        width: 40%;
+        margin: 10px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .cud1 img, .cud2 img, .cud3 img, .cud4 img, .cud5 img, .cud6 img, .cud7 img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .cud1 a, .cud2 a, .cud3 a, .cud4 a, .cud5 a, .cud6 a, .cud7 a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #FFFFFF;
+        display: block;
+        padding: 10px;
+        background-color: #5B3F8D;
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+.napis{
+    color: #C74A3A;
+    animation-name: animacja2;
+    animation-duration: 3s;
+    font-size: 40px;
+}
+
+@keyframes animacja1 {
+    0%{
+        transform: translate(450px,0px);
+    }
+    50%{
+        transform: translate(-450px,0px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+
+@keyframes animacja2 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes animacja3 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .sidenav, .cud1, .cud2, .cud3, .cud4, .cud5, .cud6, .cud7 .zdj_info1 {
+        width: 100%;
+        display: block;
+        margin: 10px 0;
+        float: none;
+    }
+    
+  
+    .sidenav, .cud1, .cud2, .cud3, .cud4, .cud5, .cud6, .cud7 .zdj_info1{
+        height: auto;
+        padding-top: 15px;
+    }
+
+    .sidenav, .cud1, .cud2, .cud3, .cud4, .cud5, .cud6, .cud7 .zdj_info1 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    .sidenav {
+        width: 250px;
+    }
+
+    .logo, .cud1, .cud2, .cud3, .cud4, .cud5, .cud6, .cud7 .zdj_info1 {
+        width: 48%;
+        margin: 1%;
+        float: left;
+        clear: none;
+    }
+
+    .sidenav a {
+        font-size: 22px;
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width: 1201px) {
+    .sidenav {
+        width: 200px;
+    }
+
+    .logo {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .cud1, .cud2, .cud3, .cud4, .cud5, .cud6, .cud7 .zdj_info1 {
+        width: 400px;
+        height: 249px;
+        margin: 15px auto;
+        float: left;
+        clear: none;
+    }
+
+    .sidenav a {
+        font-size: 25px;
+        text-align: left;
+    }
+}
+
+.cud1{
+    margin-top: 5px;
+    margin-left: 30px;
+    border-style: solid;
+    border-color: #78B3CE;
+    width: 400px;
+    height: 249px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 5px;
+    font-weight: bold;
+    background-color: #FF2929;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+}
+
+.cud1:hover{
+    animation-name: animacja3;
+    animation-duration: 2s;
+}
+
+.cud2 {
+    margin-top: 5px;
+    margin-left: 30px;
+    border-style: solid;
+    border-color: #78B3CE;
+    width: 400px;
+    height: 249px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 5px;
+    font-weight: bold;
+    background-color: #FF2929;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+}
+
+.cud2:hover{
+    animation-name: animacja3;
+    animation-duration: 2s;
+}
+
+.cud3{
+    margin-top: 5px;
+    margin-left: 30px;
+    border-style: solid;
+    border-color: #78B3CE;
+    width: 400px;
+    height: 249px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 5px;
+    font-weight: bold;
+    background-color: #FF2929;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left
+  
+}
+
+.cud3:hover{
+    animation-name: animacja3;
+    animation-duration: 2s;
+}
+
+.cud4{
+    margin-top: 5px;
+    margin-left: 30px;
+    border-style: solid;
+    border-color: #78B3CE;
+    width: 400px;
+    height: 249px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 5px;
+    font-weight: bold;
+    background-color: #FF2929;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    clear: both;
+}
+
+.cud4:hover{
+    animation-name: animacja3;
+    animation-duration: 2s;
+}
+.cud5{
+    margin-top: 5px;
+    margin-left: 30px;
+    border-style: solid;
+    border-color: #78B3CE;
+    width: 400px;
+    height: 249px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 5px;
+    font-weight: bold;
+    background-color: #FF2929;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+}
+
+.cud5:hover{
+    animation-name: animacja3;
+    animation-duration: 2s;
+}
+.cud6{
+    margin-top: 5px;
+    margin-left: 30px;
+    border-style: solid;
+    border-color: #78B3CE;
+    width: 400px;
+    height: 249px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 5px;
+    font-weight: bold;
+    background-color: #FF2929;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+}
+
+.cud6:hover{
+    animation-name: animacja3;
+    animation-duration: 2s;
+}
+
+.cud7{
+    margin-top: 5px;
+    margin-left: 30px;
+    border-style: solid;
+    border-color: #78B3CE;
+    width: 400px;
+    height: 249px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 5px;
+    font-weight: bold;
+    background-color: #FF2929;
+    font-family: Arial, Helvetica, sans-serif;
+    clear: both;
+}
+
+.cud7:hover{
+    animation-name: animacja3;
+    animation-duration: 2s;
+}
+
+.tekst{
+    text-align: center;
+    color: #8B4513;
+}
+.main2{
+    background-color: #9E9E9E;
+    height: 961px;
+    padding-left: 200px;
+    width: 88,996%;
+}
+
+
+.main3 {
+    background-color: #F7E9C8;
+    height: 960px; 
+    padding-left: 250px; 
+    width: 88.996%; 
+}
+
+.logo3 {
+    text-align: center;
+    width: 520px;
+    background-color: #A68A58;
+    border-radius: 15px;
+    padding: 10px;
+    margin-left: 520px; 
+}
+
+.tekst2 {
+    color: #3D2B1F;
+    text-align: center;
+}
+
+.info1 {
+    height: 420px;
+    width: 400px;
+    text-align: center;
+    text-indent: 10px;
+    color: #3C2F2F;
+    border-radius: 20px;
+    padding-top: 10px;
+    position: absolute;
+    top: 520px;
+    left: 240px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 30px; 
+}
+
+.mapa {
+    position: absolute;
+    top: 520px;
+    left: 730px;
+    width: 500px;
+    height: 400px; 
+}
+
+.cud {
+    position: absolute;
+    top: 520px;
+    left: 1250px;
+}
+
+
+@media (max-width: 600px) {
+    .main3 {
+        padding: 10px; 
+        height: auto; 
+    }
+    
+    .logo3 {
+        width: 90%; 
+        margin: 0 auto; 
+    }
+
+    .info1 {
+        font-size: 16px; 
+        position: relative; 
+        top: auto; 
+        left: auto;
+    }
+
+    .zdj_info1 {
+        width: 100%; 
+        height: auto; 
+        position: relative; 
+    }
+
+    .mapa {
+        width: 100%; 
+        height: 200px; 
+        position: relative; 
+    }
+
+    .cud {
+        width: auto; 
+        position: relative; 
+        left: auto; 
+        top: auto; 
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    .main3 {
+        padding: 20px; 
+    }
+
+    .logo3 {
+        width: 70%; 
+        margin: 0 auto; 
+    }
+
+    .info1 {
+        font-size: 18px; 
+        position: relative; 
+        left: auto; 
+    }
+
+    .zdj_info1 {
+        width: 80%; 
+        height: auto; 
+        position: relative; 
+        
+    }
+
+    .mapa {
+        width: 100%; 
+        height: 300px;
+        position: relative; 
+    }
+
+    .cud {
+        width: 90%; 
+        position: relative; 
+        left: auto; 
+        top: auto; 
+    }
+}
+
+@media (min-width: 1201px) {
+    .main3 {
+        background-color: #F7E9C8;
+        height: 960px;
+        padding-left: 250px; 
+        width: 88.996%;
+    }
+
+    .logo3 {
+        width: 520px;
+        margin-left: 520px; 
+    }
+
+    .info1 {
+        height: 420px;
+        width: 400px;
+        font-size: 30px; 
+        position: absolute;
+        top: 520px;
+        left: 240px;
+    }
+
+    .mapa {
+        position: absolute;
+        top: 520px;
+        left: 730px;
+        width: 500px; 
+        height: 400px; 
+    }
+
+    .cud {
+        position: absolute;
+        top: 520px;
+        left: 1250px; 
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main3 {
+        padding-left: 200px;
+    }
+
+    .logo3 {
+        width: 400px; 
+    }
+
+    .info1 {
+        font-size: 22px;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .zdj_info1 {
+        max-width: 80%; 
+    }
+
+    .mapa, .cud {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .main3 {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .logo3 {
+        width: 90%;
+    }
+
+    .info1 {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .zdj_info1 {
+        max-width: 90%;
+    }
+
+    .mapa, .cud {
+        width: 100%;
+    }
+}
+
+.main-form {
+    height: 960px;
+    background-color: #B0C4DE;
+}
+
+.form-container {
+    position: absolute;
+    top: 150px;
+    width: 500px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    left: 760px;
+}
+
+.form-header {
+    text-align: center;
+    color: #DAA520;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding-right: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #6B4F3A;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    color: #6B4F3A;
+    font-size: 20px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-submit, .btn-reset {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: #DAA520;
+    color: white;
+}
+
+.btn-reset {
+    background-color: #6B4F3A;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #B8860B;
+}
+
+.btn-reset:hover {
+    background-color: #8B4513;
+}
+
+@media screen and (max-width: 600px) {
+    .form-container {
+        width: 90%;
+        left: 5%;
+        top: 100px;
+    }
+
+    .sidenav {
+        width: 100%;
+        position: static;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .form-header {
+        font-size: 20px;
+    }
+
+    form input, form select, form textarea {
+        font-size: 18px;
+    }
+
+    .btn-submit, .btn-reset {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    .form-container {
+        width: 60%;
+        left: 20%;
+        top: 150px;
+    }
+
+    .sidenav {
+        width: 150px;
+        position: fixed;
+        padding-top: 20px;
+    }
+
+    .sidenav a {
+        font-size: 20px;
+    }
+
+    .form-header {
+        font-size: 22px;
+    }
+
+    form input, form select, form textarea {
+        font-size: 19px;
+    }
+
+    .btn-submit, .btn-reset {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .form-container {
+        width: 500px;
+        left: 760px;
+        top: 150px;
+    }
+
+    .sidenav {
+        width: 200px;
+    }
+
+    .sidenav a {
+        font-size: 25px;
+    }
+
+    .form-header {
+        font-size: 24px;
+    }
+
+    form input, form select, form textarea {
+        font-size: 20px;
+    }
+
+    .btn-submit, .btn-reset {
+        font-size: 16px;
+    }
+}
+.body2{
+    margin: 0;
+    padding: 0;
+    background-color: #9E9E9E;
+}
+
+.main2 {
+    background-color: #9E9E9E;
+    height: auto; 
+    padding-left: 200px;
+    width: calc(100% - 200px); 
+}
+
+.logo2 {
+    text-align: center;
+    width: 520px;
+    background-color: #2196F3;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0 auto; 
+}
+
+
+
+table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table img {
+    max-width: 100%;
+    height: auto;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .sidenav {
+        width: 180px; 
+    }
+    .main2 {
+        padding-left: 180px; 
+    }
+    .logo2 {
+        width: 400px; 
+    }
+    table {
+        width: 90%; 
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .sidenav {
+        width: 100%; 
+        position: relative; 
+        height: auto; 
+    }
+
+    .main2 {
+        padding-left: 0;
+        width: 100%; 
+    }
+
+    .logo2 {
+        width: 90%; 
+        margin: 20px auto;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    td {
+        display: inline-block; 
+        width: 100%;
+        text-align: center;
+    }
+
+    td a img {
+        width: 90%; 
+    }
+}
+.wideo{
+    position: absolute;
+    left: 1120px;
+    top: 130px;
+}
+
+
+
+
+
+
+@media (min-width: 1201px) {
+    .sidenav a {
+        padding: 15px 30px; 
+        font-size: 18px; 
+    }
+}

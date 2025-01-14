@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria zdjęć</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        
+        const images = [
+            { src: "img/zdj1.png", alt: "antylopa" },
+            { src: "img/zdj2.png", alt: "lew" },
+            { src: "img/zdj3.png", alt: "nosorożec" },
+            { src: "img/zdj4.png", alt: "tygrys" },
+            { src: "img/zdj5.jpg", alt: "tygrys" }
+        ];
+
+        let currentIndex = 0;
+
+        function showImage(index) {
+            const mainImage = document.getElementById("mainImage");
+            mainImage.src = images[index].src;
+            mainImage.alt = images[index].alt;
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+            showImage(currentIndex);
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+            showImage(currentIndex);
+        }
+    </script>
+</head>
+<body class="body2">
+    <nav>
+        <div class="sidenav">
+            <a href="index.html">Strona Główna</a>
+            <a href="galeria.html">Galeria Zdjęć</a>
+            <a href="formularz.html">Formularz</a>
+        </div>
+    </nav>
+    <main class="main2">
+        <div class="logo2">
+            <h1 class="tekst">Galeria Zdjęć</h1>
+        </div>
+        <center>
+            <table border="0" width="1000" height="500">
+                <tr>
+                    <td colspan="6" valign="top" style="padding-left: 100px;">
+                        <img id="mainImage" src="img/zdj1.png" alt="antylopa" style="width: 100%; height: auto;">
+                    </td>
+                </tr>
+                <tr style="padding-left: 10px;">
+                    <td><button onclick="prevImage()" style="text-decoration: none;">&lt;</button></td>
+                    <td align="center"><img src="img/zdj1_m.png" alt="antylopa" style="cursor: pointer;" onclick="showImage(0)"></td>
+                    <td align="center"><img src="img/zdj2_m.png" alt="lew" style="cursor: pointer;" onclick="showImage(1)"></td>
+                    <td align="center"><img src="img/zdj3_m.png" alt="nosorożec" style="cursor: pointer;" onclick="showImage(2)"></td>
+                    <td align="center"><img src="img/zdj4_m.png" alt="tygrys" style="cursor: pointer;" onclick="showImage(3)"></td>
+                    <td align="center"><img src="img/zdj5_m.png" alt="tygrys" style="cursor: pointer;" onclick="showImage(4)"></td>
+                    <td><button onclick="nextImage()" style="text-decoration: none;">&gt;</button></td>
+                </tr>
+            </table>
+        </center>
+    </main>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz o 7 Cudach</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="sidenav">
+            <a href="index.html">Strona Główna</a>
+            <a href="galeria.html">Galeria Zdjęć</a>
+            <a href="formularz.html">Formularz</a>
+        </div>
+    </nav>
+    <main class="main-form">
+        <div class="form-container">
+            <h1 class="form-header">Formularz o 7 Cudach Świata</h1>
+            <form action="#" method="post">
+                <label for="name">Imię i nazwisko:</label>
+                <input type="text" id="name" name="name" placeholder="Wpisz swoje imię i nazwisko" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Wpisz swój e-mail" required>
+                
+                <label for="cud">Ulubiony cud świata:</label>
+                <select id="cud" name="cud">
+                    <option value="piramida">Piramida Cheopsa</option>
+                    <option value="ogrody">Wiszące Ogrody Semiramidy</option>
+                    <option value="zeus">Posąg Zeusa w Olimpii</option>
+                    <option value="artemida">Świątynia Artemidy</option>
+                    <option value="mauzoleum">Mauzoleum w Halikarnasie</option>
+                    <option value="kolos">Kolos Rodyjski</option>
+                    <option value="latarnia">Latarnia w Aleksandrii</option>
+                </select>
+                
+                <label for="comments">Komentarze:</label>
+                <textarea id="comments" name="comments" rows="5" placeholder="Podziel się swoimi przemyśleniami"></textarea>
+                
+                <div class="form-buttons">
+                    <button type="submit" class="btn-submit">Wyślij</button>
+                    <button type="reset" class="btn-reset">Wyczyść</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
